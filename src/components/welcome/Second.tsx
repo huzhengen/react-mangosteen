@@ -1,10 +1,10 @@
 import s from './Welcome.module.scss'
-import clock from '../../assets/icons/clock.svg'
+import SvgIcon from '../SvgIcon'
 
 export const Second = () => {
   return (
     <div className={s.card}>
-      <img src={clock} alt="" />
+      <SvgIcon name="clock" />
       <h2>
         每日提醒
         <br />

@@ -1,10 +1,10 @@
 import s from './Welcome.module.scss'
-import pig from '../../assets/icons/pig.svg'
+import SvgIcon from '../SvgIcon'
 
 export const First = () => {
   return (
     <div className={s.card}>
-      <img src={pig} alt="" />
+      <SvgIcon name='pig' />
       <h2>
         会赚钱
         <br />

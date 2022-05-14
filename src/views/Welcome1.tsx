@@ -1,5 +1,5 @@
 import s from './Welcome.module.scss'
-import mangosteen from '../assets/icons/mangosteen.svg'
+import { Header } from '../components/welcome/Header'
 import { First } from '../components/welcome/First'
 import { FirstActions } from '../components/welcome/FirstActions'
 
@@ -7,8 +7,7 @@ export const Welcome1 = () => {
   return (
     <div className={s.wrapper}>
       <header>
-        <img src={mangosteen} alt="" />
-        <h1>凤果记账</h1>
+        <Header />
       </header>
       <main className={s.main}>
         <First />
