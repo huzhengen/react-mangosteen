@@ -1,18 +1,21 @@
 import { useState } from 'react'
-import { Routes, Route, Link } from 'react-router-dom'
-import './App.css'
-import { Home } from './Home'
-import { About } from './About'
+import { Routes, Route } from 'react-router-dom'
+import './App.scss'
+import { Welcome1 } from './views/Welcome1'
+import { Welcome2 } from './views/Welcome2'
+import { Welcome3 } from './views/Welcome3'
+import { Welcome4 } from './views/Welcome4'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-      <h1>Welcome to React Router!</h1>
+    <div className="page">
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
+        <Route path="/" element={<Welcome1 />} />
+        <Route path="/welcome/2" element={<Welcome2 />} />
+        <Route path="/welcome/3" element={<Welcome3 />} />
+        <Route path="/welcome/4" element={<Welcome4 />} />
       </Routes>
     </div>
   )
