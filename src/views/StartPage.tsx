@@ -2,6 +2,7 @@ import SvgIcon from '../components/SvgIcon'
 import s from './StartPage.module.scss'
 import { Button } from '../components/Button'
 import { Center } from '../components/Center'
+import { FloatButton } from '../components/FloatButton'
 
 export const StartPage = () => {
   return (
@@ -12,7 +13,7 @@ export const StartPage = () => {
       <div className={s.button_wrapper}>
         <Button className={s.button} text="开始记账" />
       </div>
-      {/* <FloatButton iconName="add" /> */}
+      <FloatButton iconName="add" />
     </div>
   )
 }
